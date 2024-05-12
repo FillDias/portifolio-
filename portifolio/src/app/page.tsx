@@ -1,7 +1,7 @@
 
 import { Capa } from "@/components/Capa/Index";
 import { Header } from "@/components/Header";
-import Link from "next/link";
+
 import React from "react";
 import {Dosis} from 'next/font/google'
 
@@ -21,11 +21,13 @@ export default function Home ()  {
     <div className={dosis.className}>
       <title>Sobre min / Felipe</title>
       <meta name="description" content="Sou um desenvolvedor Front-end Jr, com muita vontade e determinação."/>
-      <Link href={"/contatos"}>Ir para a pagina contatos</Link>
+      
       
     </div>
     <Header/>
+    <div className="py-12 px-6 md:px-32 space-y-10">
     <Capa/>
+    </div>
       </>
   );
 }
